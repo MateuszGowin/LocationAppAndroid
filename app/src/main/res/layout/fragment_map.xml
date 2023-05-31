@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="viewModel"-->
+<!--            type="com.example.myapplication.viewmodel.MapViewModel" />-->
+<!--    </data>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/test" />
+
+    <!--<com.google.android.gms.maps.MapView
+        android:id="@+id/map2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btn_nearby_search"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/dark_grey"
+            android:contentDescription="search"
+            android:src="@drawable/ic_search" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/btn_nearby_search"
+            android:id="@+id/linearlayout_radius">
+            <ImageButton
+                android:id="@+id/btn_radius"
+                android:layout_marginLeft="10dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/dark_grey"
+                android:contentDescription="radius"
+                android:src="@drawable/ic_radius"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_textview"
+                android:textColor="@color/light_grey"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="500 m"
+                android:id="@+id/tv_radius"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btn_filtr"
+            android:layout_marginLeft="10dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/dark_grey"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/linearlayout_radius"
+            android:contentDescription="filtr"
+            android:src="@drawable/ic_filter"/>
+
+        <ImageButton
+            android:id="@+id/btn_follow"
+            android:layout_marginRight="10dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/dark_grey"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="filtr"
+            android:src="@drawable/ic_user_location"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/bottom_sheet_dialog_marker_layout" />
+
+            <include layout="@layout/bottom_sheet_filtr" />
+
+            <include layout="@layout/bottom_sheet_radius"/>
+
+            <!--<Button
+            android:id="@+id/test_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="A"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_anchorGravity="bottom|center"
+            app:layout_anchor="@+id/bottom_sheet_layout"
+            app:layout_behavior="com.example.myapplication.BottomSheetBehavior"/>-->
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

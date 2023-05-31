@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">asd</string>
+    <string name="ACCESSTOKEN">accessToken</string>
+    <string name="forgot_password"><u>Nie pamiętam hasła</u></string>
+    <string name="error_field_required">To pole nie może być puste</string>
+    <string name="error_invalid_email">Nie poprawny adres email</string>
+</resources>

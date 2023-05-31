@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_layout_radius"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_shape"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz średnice"
+            android:padding="10dp"
+            android:textSize="28sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_radius_submit"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="Zastosuj"
+            android:backgroundTint="@color/grey"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_grey"
+        android:padding="10dp"
+        android:id="@+id/radio_group_radius">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="500 m"
+            android:tag="500"
+            android:textColor="@color/light_grey"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"
+            android:id="@+id/radio_button_500"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1000 m"
+            android:tag="1000"
+            android:textColor="@color/light_grey"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"
+            android:id="@+id/radio_button_1000"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1500 m"
+            android:tag="1500"
+            android:textColor="@color/light_grey"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"
+            android:id="@+id/radio_button_1500"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2000 m"
+            android:tag="2000"
+            android:textColor="@color/light_grey"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"
+            android:id="@+id/radio_button_2000"/>
+
+    </RadioGroup>
+    
+
+</LinearLayout>

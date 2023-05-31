@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/dark_grey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_add_opinion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj opinie"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/ic_add"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+    <TextView
+        android:id="@+id/noOpinion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brak opinii"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp"
+        android:visibility="gone"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_opinions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
