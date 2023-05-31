@@ -2,7 +2,7 @@
 
 A mobile application for finding interesting places in nearby area. It that lets user search for places within a selected radius, filter places and add new ones. It also includes a comment and rating system. The application has a registration and login system.
 
-## Libraries used in this project
+## Libraries and tools used in this project
 
 - Google Maps SDK
 - Retrofit
@@ -10,6 +10,7 @@ A mobile application for finding interesting places in nearby area. It that lets
 - Navigation Component
 - RecyclerView
 - Material Design
+- Android Studio
 
 
 ## Screenshots
