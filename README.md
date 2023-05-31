@@ -1,6 +1,6 @@
 # LocationApp
 
-A mobile application for finding interesting places in nearby area. It that lets user search for places within a selected radius, filter places and add new ones. It also includes a comment and rating system. The application has a registration and login system.
+A mobile application for finding interesting places in nearby area. It that lets user search for places within a selected radius, filter places and add new ones. It also includes a comment and rating system. The application has a registration, login system and password reset feature.
 
 ## Libraries and tools used in this project
 
